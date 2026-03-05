@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# WordPress uploads
+wp-content/uploads/
+
+# WordPress cache
+wp-content/cache/
+
+# WordPress languages
+wp-content/languages
+
+# WordPress plugins
+wp-content/plugins/*
+!wp-content/plugins/portfolio-core/
+!wp-content/plugins/portfolio-core/**
+
+# WordPress themes
+wp-content/themes
+
+# Local env
+.env
+
+# Docker volumes
+db_data
+
+# .idea
+.idea
