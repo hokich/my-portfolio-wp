@@ -30,5 +30,18 @@ services:
       PMA_HOST: my-portfolio-db
       PMA_PORT: 3306
 
+  nginx:
+    image: nginx:stable
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/certs:/etc/letsencrypt
+      - ./wp-content:/var/www/html/wp-content
+    depends_on:
+      - my-portfolio-wordpress
+
 volumes:
   db_data:
