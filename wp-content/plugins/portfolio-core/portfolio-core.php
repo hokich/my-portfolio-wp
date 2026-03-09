@@ -21,3 +21,8 @@ function portfolio_enqueue_styles() {
     );
 }
 add_action('wp_enqueue_scripts', 'portfolio_enqueue_styles');
+
+add_filter('upload_mimes', function($mimes) {
+    $mimes['pdf'] = 'application/pdf';
+    return $mimes;
+});
