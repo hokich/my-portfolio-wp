@@ -1,0 +1,113 @@
+.portfolio-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+    width: 100%;
+}
+
+.portfolio-projects-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.portfolio-projects-column--offset {
+    margin-top: -54px;
+}
+
+.portfolio-root__header {
+    margin-bottom: 10px;
+}
+
+.portfolio-root__label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--wp--preset--color--secondary, #a855f7);
+    margin: 0 0 8px;
+}
+
+.portfolio-root__title {
+    font-family: var(--wp--preset--font-family--space-grotesk, sans-serif);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--wp--preset--color--background, #ffffff);
+    margin: 0;
+}
+
+.portfolio-project-card {
+    background: var(--wp--preset--color--border-color, #1e2530);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.portfolio-project-card__body {
+    padding: 35px 30px;
+}
+
+.portfolio-project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.portfolio-project-card__tag {
+    background: var(--wp--preset--color--foreground, #2a3240);
+    color: var(--wp--preset--color--background, #ffffff);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-family: var(--wp--preset--font-family--open-sans, sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.portfolio-project-card__title {
+    font-family: var(--wp--preset--font-family--space-grotesk, sans-serif);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--wp--preset--color--background, #ffffff);
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.portfolio-project-card__excerpt {
+    font-family: var(--wp--preset--font-family--open-sans);
+    font-weight: 500;
+    color: var(--wp--preset--color--background, #ffffff);
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.portfolio-project-card__excerpt p {
+    margin-bottom: 8px;
+}
+
+.portfolio-project-card__link {
+    font-family: var(--wp--preset--font-family--open-sans);
+    font-weight: 500;
+    color: var(--wp--preset--color--background, #ffffff);
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.portfolio-project-card__image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .portfolio-projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-projects-column--offset {
+        margin-top: 0;
+    }
+}
