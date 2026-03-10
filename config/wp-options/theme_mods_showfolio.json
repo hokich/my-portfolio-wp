@@ -1,0 +1,18 @@
+{
+  "0": false,
+  "wp_classic_sidebars": [],
+  "nav_menu_locations": [],
+  "custom_css_post_id": -1,
+  "sidebars_widgets": {
+    "time": 1772211586,
+    "data": {
+      "wp_inactive_widgets": [
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    }
+  }
+}
